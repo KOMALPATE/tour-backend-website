@@ -6,6 +6,8 @@ const adminController = require("../controllers/admin.controller");
 router.post("/login", adminController.adminLogin);
 router.post("/logout", adminController.adminLogout);
 
+router.get("/users", adminController.getUsers);
+
 router.post("/tours/add", adminController.addTour);
 router.get("/tours", adminController.getTours);
 router.put("/tours/update/:id", adminController.updateTour);
